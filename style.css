@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+     width: 100%;
+    min-height: 100vh;
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtMjE4LW5pbmctMDktam9iNTk4LmpwZw.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .container{
+    width: 100%;
+    margin-top: 200px;
+    min-height: 100vh;
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtMjE4LW5pbmctMDktam9iNTk4LmpwZw.jpg);
+ }
+   .todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(18, 68, 18);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+   }
+
+   .todo-app h2{
+    color: lightgreen;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+   }
+   .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin-bottom: 25px;
+
+   }
+   .input{
+    flex:1;
+    border: none;
+    padding: 10px;
+    background: darkolivegreen;
+    color: darkseagreen;
+    font-weight: 14px;
+
+   }
+   .input-box input{
+    color: darkolivegreen;
+    opacity: 1;
+   }
+   button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: rgb(95, 155, 95);
+    color: rgb(26, 118, 26);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+   }
+   ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    color: lightgreen;
+    position: relative;
+
+   }
+   ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:  url(https://icons.veryicon.com/png/o/miscellaneous/basic-icon-5/unchecked-41.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+   
+    
+
+   }
+   ul li.checked{
+    color: lightgreen;
+    text-decoration: line-through;
+
+   }
+   ul li.checked::before{
+    background-image:  url(https://www.freeiconspng.com/thumbs/checkmark-png/black-checkmark-png-4.png);
+   }
+   ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: darkolivegreen;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+   }
+   ul li span:hover{
+background: seagreen;
+
+   }
